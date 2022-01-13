@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Domine', serif;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background-color: #0d162c;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+  body .div__cardNFT {
+    width: 300px;
+    height: 500px;
+    background-color: #15273f;
+    border-radius: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: 10px 25px 5px #0d1a2d; }
+    body .div__cardNFT img {
+      width: 90%;
+      margin: auto;
+      border-radius: 5%; }
+    body .div__cardNFT .div__focusImg {
+      width: 90%;
+      height: 270px;
+      border-radius: 5%;
+      top: 10px;
+      left: 5%;
+      background-color: rgba(15, 255, 255, 0.4);
+      position: absolute;
+      z-index: 100;
+      opacity: 0; }
+      body .div__cardNFT .div__focusImg img {
+        width: 30%;
+        margin: 35%; }
+      body .div__cardNFT .div__focusImg:hover {
+        opacity: 1; }
+    body .div__cardNFT a {
+      text-decoration: none; }
+      body .div__cardNFT a h1 {
+        color: white;
+        font-size: 24px;
+        cursor: pointer; }
+        body .div__cardNFT a h1:hover {
+          color: #0fffff; }
+    body .div__cardNFT .div__infoToken {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 90%;
+      height: 130px;
+      margin: auto;
+      color: #7a8ca3; }
+      body .div__cardNFT .div__infoToken .div__valueEthereum, body .div__cardNFT .div__infoToken .div__timeLeft {
+        width: 50%;
+        border-bottom: 1px solid #7a8ca3; }
+        body .div__cardNFT .div__infoToken .div__valueEthereum .img__iconToken, body .div__cardNFT .div__infoToken .div__timeLeft .img__iconToken {
+          width: 10px; }
+        body .div__cardNFT .div__infoToken .div__valueEthereum .img__iconClock, body .div__cardNFT .div__infoToken .div__timeLeft .img__iconClock {
+          width: 15px; }
+        body .div__cardNFT .div__infoToken .div__valueEthereum .p__valueEthereum, body .div__cardNFT .div__infoToken .div__timeLeft .p__valueEthereum {
+          font-weight: 600;
+          color: #0fffff; }
+        body .div__cardNFT .div__infoToken .div__valueEthereum p, body .div__cardNFT .div__infoToken .div__timeLeft p {
+          width: fit-content;
+          display: inline; }
+      body .div__cardNFT .div__infoToken .div__timeLeft {
+        text-align: end; }
+    body .div__cardNFT div .img__avatar {
+      width: 30px;
+      border: 1px solid white;
+      border-radius: 50%; }
+    body .div__cardNFT .div__infoAutor {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-start; }
+      body .div__cardNFT .div__infoAutor img {
+        margin-left: 0;
+        margin-right: 10px; }
+      body .div__cardNFT .div__infoAutor p {
+        color: #7a8ca3; }
+        body .div__cardNFT .div__infoAutor p a {
+          text-decoration: none; }
+          body .div__cardNFT .div__infoAutor p a span {
+            color: white; }
+            body .div__cardNFT .div__infoAutor p a span:hover {
+              color: #0fffff; }
+  body .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    color: #7a8ca3; }
+    body .attribution a {
+      color: #3e52a3; }

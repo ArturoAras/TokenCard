@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Domine', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(13,22,44);
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .div__cardNFT{
+        width: 300px;
+        height: 500px;
+        background-color: rgb(21, 39, 63);
+        border-radius: 5%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        position: relative;
+        box-shadow: 10px 25px  5px rgb(13, 26, 45);
+        img{
+            width: 90%;
+            margin: auto;
+            border-radius: 5%;
+        }
+        .div__focusImg{
+            width: 90%;
+            height: 270px;
+            border-radius: 5%;
+            top: 10px;
+            left: 5%;
+            background-color: rgba(15,255,255, .4);
+            position: absolute;
+            z-index: 100;
+            opacity: 0;
+            img{
+                width: 30%;
+                margin: 35%;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+        a{
+            text-decoration: none;
+            h1{
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(15,255,255);
+                }
+            }
+        }
+        .div__infoToken{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            width: 90%;
+            height: 130px;
+            margin: auto;
+            color: rgb(122, 140, 163);
+            .div__valueEthereum, .div__timeLeft{
+                width: 50%;
+                border-bottom: 1px solid rgb(122, 140, 163);
+                .img__iconToken{
+                    width: 10px;
+                }
+                .img__iconClock{
+                    width: 15px;
+                }
+                .p__valueEthereum{
+                    font-weight: 600;
+                    color: rgb(15,255,255);
+                }
+                p{
+                    width: fit-content;
+                    display: inline;
+                }
+            }
+            .div__timeLeft{
+                text-align: end;
+            }
+        }
+        div{
+            .img__avatar{
+                width: 30px;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 50%;
+            }
+        }
+        .div__infoAutor{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+                margin-left: 0;
+                margin-right: 10px;
+            }
+            p{
+                color: rgb(122, 140, 163);
+                a{
+                    text-decoration: none;
+                    span{
+                        color: rgb(255, 255, 255);
+                        &:hover{
+                            color: rgb(15,255,255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .attribution{
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        top: 15%;
+        color: rgb(122, 140, 163);
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
